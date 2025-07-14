@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bisnis Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f6f6f6;
+      color: #333;
+      line-height: 1.6;
+      background: linear-gradient(to bottom right, #d4eac8, #f6f6f6);
+    }
+    header, section {
+      padding: 20px 20px;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(to right, #696969, #bfbfc0);
+
+      color: white;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin: 30px 0 20px;
+      color: #000000;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 3000px;
+      text-align: left;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .highlight {
+      color: #4e6e5d;
+      font-weight: bold;
+    }
+    footer {
+      background: #6b6a6a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+     .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    body {
+  background: linear-gradient(rgba(228, 187, 140, 0), rgba(235, 195, 150, 0)),  
+              url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+    .step {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .step img {
+      width: 40px;
+      height: 40px;
+    }
+    .testimonial-img {
+      width: 20%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.wa-button {
+  animation: pulse 1.5s infinite;
+}
+
+    .wa-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .wa-button:hover {
+      background-color: #128C7E;
+    }
+    .testimonial-slider {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+.faq-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+#countdown {
+  background: #fff3f3;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  background: #6e6e6d;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.faq-question:hover {
+  background: #a1a1a1;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 20px;
+  transition: max-height 0.4s ease;
+}
+.faq-answer p {
+  margin: 15px 0;
+}
+.faq-item.active .faq-answer {
+  max-height: 3000px; /* cukup untuk beberapa paragraf */
+}
+
+.slides img {
+  min-width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wa-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4086b4;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: pulse 1.5s infinite;
+}
+.wa-button:hover {
+  background-color: #128C7E;
+}
+
+  </style>
+<style>
+  .floating-chat {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    z-index: 9999;
+    max-width: 250px;
+    animation: fadeInOut 5s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0% {opacity: 0; transform: translateY(20px);}
+    10% {opacity: 1; transform: translateY(0);}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: translateY(20px);}
+  }
+  .join-section {
+  background-color: #8d8c8c;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+ul.checklist {
+  list-style: none;
+  padding: 0;
+}
+ul.checklist li::before {
+  content: "✔️ ";
+  margin-right: 5px;
+}
+.cta-button .btn {
+  background-color: #4e74ad;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+  <header>
+    
+    <h1><small>Cara Paling <strong style="color: rgb(57, 96, 179);">Gampang</strong> Buat Dapet Cuan <strong style="color: rgb(57, 96, 179);">Jutaan PERHARI</strong> dari <strong style="color: rgb(57, 96, 179);">Produk Digital</strong> Tanpa Modal, <strong style="color: rgb(57, 96, 179);">Tanpa Ribet</strong>, Diajarkan <strong style="color: rgb(57, 96, 179);">Semuanya dari 0!</strong>
+     </small>
+</h1>
+
+  </header>
+<section>
+    <p><strong>Mulai hari ini juga! Langsung praktik jualan, langsung dapet uang dari produk digital. Dari HP doang, tanpa harus bikin produk sen﻿diri!</strong></p>
+<h2>📈Nih, Buktinya...</h2>
+<h2><small><span style="background-color: rgb(81, 125, 161);">Gurihnya jualan Produk Digital</span></small></h2>
+<h1><span style="background-color: rgb(75, 156, 88);">Tiap Hari dapat segini🔥</span></h1>
+</section>
+<section>
+<p><strong>Penghasilan Tanggal 29 Mei</strong></p>
+<img src="29.webp" alt="w" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<p><strong>Penghasilan Tanggal 30 Mei</strong></p>
+<img src="30.webp" alt="Pwwenjelasan Program" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<p><strong>Penghasilan Tanggal 31 Mei</strong></p>
+<img src="31.webp" alt="Peeeeenjelasan Program" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+<h2><small><span style="background-color: rgb(81, 161, 88);">Dan Dibulan Mei 2025</span></small></h2>
+<h2><small><span style="background-color: rgb(81, 161, 88);">Tembus 100JT</span></small></h2>
+<img src="mei.webp" alt="Peneeeejelasan Program" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+
+  </section>
+
+  <section>
+    <div class="grid">
+      <div class="card">
+        <h3>Siapa yang nggak mau?😎</h3>
+        <p>‎</p>
+<p>Ini bukan buat flexing yaa.</p>
+
+Cuma pengen kasih tahu kalau<p>‎</p>
+<p> <strong>Jualan produk digital itu lagi Gurih Banget, bahkan bisa jadi Passive Income buat kamu....</strong></p>
+<p>‎</p>
+<p style="color: red;">Lagi kerja, kuliah, main sama anak, bahkan ketika tidur bisa CLOSING loh!😲</p>       
+    </div>
+  </section>
+  </section>
+<section>
+  <h2 class="section-title">Harga Promo Hari Ini 🔥</h2>
+  <div style="font-size: 1.5rem; margin-bottom: 10px;">
+    <span style="text-decoration: line-through; color: #000000;">Rp1.800.000</span>
+    <span class="tebal-bara"> 🔥Rp99.000 </span>
+  </div>
+  <div style="font-size: 1.2rem; color: #07180b; font-weight: bold;">
+  💥 Diskon 95% untuk 50 Orang Tercepat HARI INI!
+  </div>
+</section>
+<section>
+  <h2 class="section-title">🔥 Promo Spesial Berakhir Dalam:</h2>
+  <div id="countdown" style="font-size: 2rem; font-weight: bold; color: #e63946; margin-top: 10px;"></div>
+  <p style="margin-top: 10px; color: #555;">Jangan sampai kelewatan! Harga akan kembali normal ke <del>Rp1.800.000</del></p>
+</section>
+<section>
+<div class="cta-button">
+    <a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="btn"> > Mau Langsung Belajar & Cuan? Klik Disini Sekarang !</a>
+  </div>
+</section>
+<style>
+  .tebal-bara {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #8f3434;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-shadow:
+      0 0 4px #ff0000,
+      0 0 8px #ff5500,
+      0 0 12px #ffaa00,
+      0 0 18px #ff6600,
+      0 0 24px #cc2200;
+    animation: baraGlow 0.8s infinite alternate;
+  }
+
+  @keyframes baraGlow {
+    0% {
+      text-shadow:
+        0 0 3px #660000,
+        0 0 6px #990000,
+        0 0 10px #cc3300,
+        0 0 14px #ff5500,
+        0 0 18px #ffaa00;
+    }
+    100% {
+      text-shadow:
+        0 0 6px #ff0000,
+        0 0 12px #ff3300,
+        0 0 18px #ff6600,
+        0 0 24px #ffaa00,
+        0 0 30px #ffcc66;
+    }
+  }
+</style>
+<section>
+<div class="grid">
+      <div class="card">
+        <h3> Jujur deh Kamu Pasti Pernah Ngerasain Ini:</h3>
+<p>❌ Bingung mulai dari mana buat jualan online…</p>
+<p>❌ Takut gagal karena gak ngerti digital product itu apa…</p>
+<p>❌ Ngerasa gapunya skill apa-apa, apalagi produk buat dij﻿ual</p>
+<p>❌ Pengen mulai, tapi tiap liat kelas bisnis mahal banget
+</p>
+<p>❌ Udah coba belajar, tapi bingung sendiri...
+</p>   
+<p><strong>🔥 Kalo iya, berarti kamu bakal cocok banget ikut Digital Mastery ini!</strong>
+</p>
+
+</div>
+</div>
+</section>
+<section>
+    <h3 class="section-title"><small>Emang Bisa Cuan dari Produk Digital?</small></h3>
+    <div class="grid">
+      <div class="card">
+        <h3>Dulu, kalau mau mulai bisnis harus:</h3>
+<p>❌ Punya produk dulu</p>
+
+❌ Punya modal besar
+
+<p>❌ Punya pengalaman jualan Sekarang? </p>
+
+Udah beda.
+
+<p>Dengan sistem ini:</p>
+
+✅️ Kamu bisa jualan produk digital TANPA bikin produk sendiri
+
+<p>✅️ Bisa mulai dari NOL pengikut</p>
+
+✅️ Cuma butuh HP dan kuota
+
+<p>✅️ Bahkan bisa auto closing pake sistem</p>
+    </div>
+  </section>
+  <section>
+    <h3 class="section-title"><small> yang sering nyepelein jualan produk digital!</small></h3>
+    <p><storng>ANALISIS POTENSI KEUNTUNGAN</storng></p>
+    <div class="grid">
+      <div class="card">
+<p>💸 Modal: Rp 0 (Gak perlu bikin produk)</p>
+
+💸 Biaya Iklan: Bisa dimulai dari Rp10.000-an
+
+<p>💸 Profit Target Hari Ke-5: Rp 10.000.000</p>
+
+💸 Keuntungan Bersih: Bisa sampai 90%+
+
+<p>+
+
+💰 Semua sistem udah disusun, tinggal ikutin, langsung bisa jualan.</p>
+</p>
+<p>✅ Hari pertama bisa mulai jualan
+
+✅ Hari kedua mulai closing
+
+<p>✅ Hari kelima bisa tembus puluhan juta</p>
+    </div>
+  </section>
+ <section>
+<div class="cta-button">
+    <a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="btn"> > Mau Langsung Belajar & Cuan? Klik Disini Sekarang !</a>
+  </div>
+ </section>
+  <section>
+    <h2 class="section-title">⚡️Ini Cocok Banget Untuk Kamu</h2>
+    <p>📱
+
+Anak muda yang mau cepet punya penghasilan dari rumah</p>
+    <p>👩🏻‍👧 
+
+Ibu rumah tangga yang pengen punya penghasilan sendiri</p>
+    <p>🚀 
+
+Siapa pun yang mau punya sistem penghasil uang dari HP</p>
+  </section>
+</section>
+  <section>
+  <h2 class="section-title">Kata Mereka Setelah Mempelajari dan Praktek ✅ </h2>
+  <div class="testimonial-slider">
+    <div class="slides">
+      <img src="1747033266684-IMG_3967.webp" alt="Testimoni 1">
+      <img src="1747033273853-IMG_3966.webp" alt="Testimoni 2">
+      <img src="1747033278907-IMG_3965.webp" alt="Testimoni 3">
+      <img src="1747033284225-IMG_3963.webp" alt="Testimoni 4">
+      <img src="1747033287622-IMG_3964.webp" alt="Testimoni 5">
+     
+    </div>
+  </div>
+</section>
+<section>
+    <h3 class="section-title"><small>Emang Bisa Cuan dari Produk Digital?</small></h3>
+    <div class="grid">
+      <div class="card">
+      <h3> Kami Siapin Semua Dari A-Z ✅ </h3>
+
+ <p>‎</p>
+
+<p></p>Kamu gak perlu bingung harus mulai dari mana.
+
+Semua materi udah disusun rapi:
+
+
+
+<p></p>✅ Langkah 1 sampai 5 langsung praktik
+
+
+
+✅ Modul harian biar gak bingung harus ngapain dulu
+
+
+
+<p></p>✅Sistem copywriting, iklan, dan strategi closing udah disiapin!
+ <p>‎</p>
+<h3>Yang Kamu Dapetin Kalo Beli Hari Ini! 👇🏻
+</h3>
+ <p>‎</p>
+<p></p>📘 Panduan Lengkap 5 Hari Cuan dari Produk Digital
+📱 Video Tutorial & Template Copywriting Siap Pakai
+<p></p>🎯 Strategi Meta Ads + TikTok Ads Modal Kecil
+💰 Formula Rilis Produk Digital Tanpa Produk Sendiri
+<p></p>💼 Sistem Jualan Tanpa Harus Muncul Muka
+✅ Script & Template Page Siap Pakai
+ <p>‎</p>
+
+<h3>🎁 MASIH ADA BONUS LAGI</h3>
+ <p>‎</p>
+<p></p>(SENILAI 1,5 JUTA++) 
+
+
+
+<p></p>📣 Privat 1 on 1 dengan Mentor
+
+<p></p>Rp600.000 GRATIS
+
+
+
+<p></p>📓 750+ Produk Digital Siap Jual
+
+<p></p>Rp350.000 GRATIS
+
+
+
+<p></p>🔁 Update Materi Seumur Hidup
+
+<p></p>Rp550.000 GRATIS
+
+
+    </div>
+  </section>
+<section>
+    <h2 class="section-title">💥 Total Nilai: Rp1.800.000++</h2>
+   Tapi hari ini… 
+🎯 Cukup bayar:
+
+<h3><span style="background-color: red;"><strong>Rp99.000 AJA!</strong></span></h3>
+<p>‎</p>
+(Yes, sekali bayar, akses selamanya)
+   <p></p> ✅ Dapat akses semua materi 
+
+<p></p>✅ Semua bonus langsung aktif
+
+<p></p>✅ Cukup bayar sekali, akses selamanya 
+
+<p></p>✅ Bisa langsung jualan & cuan dari hari pertama
+
+
+  </section>
+  <section>
+<div class="cta-button">
+    <a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="btn"> > Mau Langsung Belajar & Cuan? Klik Disini Sekarang !</a>
+  </div>
+</section>
+<section>
+    <h2 class="section-title">🌟 Bayangkan...</h2>
+  <p></p> 5 hari dari sekarang kamu bangun pagi, buka HP, dan liat saldo udah nambah puluhan juta dari hasil jualan digital.
+
+<p></p>Bukan mimpi. Ini real.
+
+
+
+<p></p>📍 Banyak yang udah buktiin sistem ini bisa hasilin 10-50 juta di minggu pertama.
+
+<p></p>📍 Sekarang giliran kamu.
+  </section>
+<a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="wa-button" style="position: fixed; bottom: 20px; right: 20px; border-radius: 50px; background-color: #2f7f97; color: #fff; padding: 14px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); font-size: 1rem;">
+  DAFTAR SEKARANG
+</a>
+
+
+<section>
+  <h2 class="section-title">FAQ - Pertanyaan yang Sering Diajukan</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">Harus punya produk dulu?</button>
+      <div class="faq-answer">
+        <p>Gak perlu. Kamu bakal diajarin pake produk yang udah ada dan legal dijual.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Harus bisa desain?</button>
+      <div class="faq-answer">
+        <p>Gak. Semua template sudah disiapin tinggal edit dikit.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Bisa dijalanin dari HP?
+</button>
+      <div class="faq-answer">
+        <p>Iya! Semuanya bisa 100% dari HP.</p>
+      </div>
+    </div>
+    
+
+    <div class="faq-item">
+      <button class="faq-question">Ada bimbingan kalau bingung?
+</button>
+      <div class="faq-answer">
+        <p>Ada. Kamu akan dapatkan bimbingan privat 1: 1 dengan mentor</p>
+      </div>
+    </div>
+   
+  </div>
+</section>
+<section>
+    <h2 class="section-title"><small>🛑 KESEMPATAN TERAKHIR: ⚠️</small></h2>
+   <p></p> Kuota dibatasi cuma 50 orang pertama!
+
+<p>‎</p>
+<p></p>Kamu tahu kan, cari kerjaan sekarang susahnya minta ampun.
+
+<p></p>Bayar 5-10 juta buatk kelas online juga mahalnya minta ampun. Belum lagi biaya marketing, operasional. Kalo gagal? Ruginya ga kira kira! Dan yang paling parah?
+
+<p>‎</p>
+
+<p></p>Mayoritas tetap GAGAL!.
+<p>‎</p>
+<p></p>TAPI SEKARANG…
+
+<p>‎</p>
+
+<p></p>Kamu bisa langsung punya bisbis sendiri dengan sistem SIAP JUAL dengan modal dan resiko yang kecil!
+</section>
+<section>
+  <h2 class="section-title">Harga Promo Hari Ini 🔥</h2>
+  <div style="font-size: 1.5rem; margin-bottom: 10px;">
+    <span style="text-decoration: line-through; color: #000000;">Rp1.800.000</span>
+    <span class="tebal-bara"> 🔥Rp99.000 </span>
+  </div>
+  <div style="font-size: 1.2rem; color: #07180b; font-weight: bold;">
+  💥 Diskon 95% untuk 50 Orang Tercepat HARI INI!
+  </div>
+</section>
+<section>
+<div class="cta-button">
+    <a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="btn"> > Mau Langsung Belajar & Cuan? Klik Disini Sekarang !</a>
+  </div>
+</section>
+<section><p><strong>⚠️ INGAT!
+
+Harga akan kembali ke 1.800.000</strong></p>
+💡 Semakin lama kamu menunda, semakin banyak orang yang udah duluan cuan.
+
+</section>
+<section class="join-section">
+  <p><strong> MASIH RAGU? NIH KAMI KASIH</strong></p>
+  <h2 class="section-title">🛡️ Garansi Gila: 30 Hari Balik Modal atau Refund!</h2>
+  <p><strong>Kalo kamu udah nyoba dan gak dapet hasil apapun, kamu bisa minta refund. Gak pake ribet!
+
+Ambil Promonya Sebelum Kuota Penuh!</strong></p>  <div class="cta-button">
+   
+   <a href="https://lynk.id/bisnisonlinegenz1/e64z8xlko3dg" class="btn">DAFTAR SEKRANG</a> </div>
+   <p>‎</p>
+  <p><span style="background-color: red;"><strong>Jangan Buang Kesempatan Kali ini..</strong>
+</span></p>
+<p></p>Mungkin anda melewatkan peluang besar menjadi reseller di tahun 2015, melewatkan kesempatan emas bisnis dropship di tahun 2018.
+
+
+
+<p></p>Sekarang ditahun 2025 jangan sampai anda melewatkan kesempatan bisnis online produk digital dengan modal yang sangat minim dan dapat anda jual berkali-kali.
+
+
+</section>
+
+
+  
+  <script>
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 2500); // ganti gambar setiap 3 detik
+</script>
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+      faqItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+<script>
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 1); // Atur promo berakhir 2 hari dari sekarang
+
+  const countdown = document.getElementById("countdown");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdown.textContent = "Promo telah berakhir!";
+      countdown.style.color = "#999";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    countdown.textContent = `${days} hari ${hrs} jam ${mins} menit ${secs} detik`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+</body>
+</html>
